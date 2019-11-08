@@ -33,7 +33,7 @@ const server = http.createServer((req, res) => {
     }
     catch (err){
         res.statusCode = 404;
-        res.end(Error.message);
+        res.end(err.message);
     }
 });
 /*
